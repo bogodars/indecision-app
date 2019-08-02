@@ -11,7 +11,7 @@
     "serve": "live-server public/",
     "build": "webpack",
 		"dev-server": "webpack-dev-server",
-		"start": "webpack-dev-server --hot",
+		"start": "node indecision-app.js",
     "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
