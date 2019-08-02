@@ -2,17 +2,13 @@
   "name": "indecision-app",
   "version": "1.0.0",
   "main": "index.js",
-	"license": "MIT",
-	"engines": {
-    "node": "10.16.0",
-    "npm": "6.10.1"
-  },
+  "license": "MIT",
   "scripts": {
+    "start": "serve public",
     "serve": "live-server public/",
     "build": "webpack",
 		"dev-server": "webpack-dev-server",
-		"start": "node indecision-app.js",
-    "heroku-postbuild": "npm run build:prod"
+		"heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -29,6 +25,7 @@
     "react-dom": "^16.8.6",
     "react-modal": "2.2.2",
     "sass-loader": "6.0.6",
+    "serve": "^11.1.0",
     "style-loader": "0.18.2",
     "validator": "8.0.0",
     "webpack": "^3.1.0",
